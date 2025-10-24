@@ -1,0 +1,78 @@
+.shapes{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+.shape5 , .shape3{
+border: 2px solid red;
+width: 100px;
+height: 100px;
+background-image: linear-gradient(to bottom right , red , yellow);
+animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate
+{
+    0% {
+        transform: translateY(-700px) rotate(0deg);
+    }
+
+    100%{
+        transform:  translateY(100px) rotate(360deg);
+    }
+}
+
+
+.shape2 , .shape4{
+/* margin-top: 20%; */
+border: 2px solid rgb(9, 255, 0);
+width: 100px;
+height: 100px;
+position: relative;
+background-image: linear-gradient(to bottom right , rgb(0, 255, 30) , yellow);
+animation: rotateandmove 5s linear infinite reverse;
+}
+
+
+@keyframes rotateandmove
+{
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+
+    100%{
+        transform: translateY(700px) rotate(360deg);
+    }
+}
+
+
+.shape1 , .shape6{
+border: 2px solid rgb(30, 0, 255);
+border-radius: 50%;
+width: 100px;
+height: 100px;
+position: relative;
+background-image: linear-gradient(to bottom right , rgb(38, 0, 255) , yellow);
+animation: moveobject 2s linear infinite reverse;
+}
+
+
+@keyframes moveobject{
+
+from{
+    transform: translateX(100px);
+}
+
+to{
+    transform: translateX(0px);
+
+}
+}
+
+
+
